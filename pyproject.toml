@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "iavanna-notebooks"
+version = "0.1.0"
+description = ""
+authors = ["iosub <1330995+iosub@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+kaleido = "0.2.1"
+vanna = {extras = ["chromadb", "ollama"], version = "^0.7.2"}
+pyodbc = "^5.1.0"
+
+[tool.poetry.group.dev.dependencies]
+#vanna = {extras = ["chromadb", "ollama"], version = "^0.7.2"}
+chromadb = "^0.5.5"
+ollama = "^0.3.2"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
